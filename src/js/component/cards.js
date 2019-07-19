@@ -1,27 +1,52 @@
 import React from "react";
 
 //create your first component
-export default class Cards extends React.Component {
+export class Card extends React.Component {
 	render() {
-		return (
-			<React.Fragment>
-				<div class="card">
-					<img class="card-img-top" src="..." alt="Card image cap" />
-					<div class="card-body">
-						<h5 class="card-title">Card title</h5>
-						<p class="card-text">
-							This is a longer card with supporting text below as
-							a natural lead-in to additional content. This
-							content is a little bit longer.
-						</p>
-						<p class="card-text">
-							<small class="text-muted">
+		let cardsObj = [
+			{
+				title: "Title1",
+				desc: "desc2",
+				img: "http://lorempixel.com/400/400/sports/"
+			},
+			{
+				title: "Title1",
+				desc: "desc2",
+				img: "http://lorempixel.com/400/400/sports/"
+			},
+			{
+				title: "Title1",
+				desc: "desc2",
+				img: "http://lorempixel.com/400/400/sports/"
+			},
+			{
+				title: "Title1",
+				desc: "desc2",
+				img: "http://lorempixel.com/400/400/sports/"
+			}
+		];
+
+		let cards = cardsObj.map((e, i) => {
+			return (
+				<div className="card" key={i}>
+					<img
+						className="card-img-top"
+						src={e.img}
+						alt="Card image cap"
+					/>
+					<div className="card-body">
+						<h5 className="card-title">{e.title}</h5>
+						<p className="card-text">{e.desc}</p>
+						<p className="card-text">
+							<small className="text-muted">
 								Last updated 3 mins ago
 							</small>
 						</p>
 					</div>
 				</div>
-			</React.Fragment>
-		);
+			);
+		});
+
+		return <div className="card-deck">{cards}</div>;
 	}
 }
