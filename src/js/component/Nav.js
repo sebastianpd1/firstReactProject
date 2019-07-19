@@ -4,9 +4,25 @@ import React from "react";
 export class Nav extends React.Component {
 	render() {
 		return (
-			<div className="text-center mt-5">
-				<h1>NAV!</h1>
-			</div>
+			<nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+				<a className="navbar-brand" href="#">
+					Start Bootstrap
+				</a>
+				<div className="navbar-nav ml-auto">
+					<a className="nav-item nav-link active" href="#">
+						Home <span className="sr-only">(current)</span>
+					</a>
+					<a className="nav-item nav-link" href="#">
+						About
+					</a>
+					<a className="nav-item nav-link" href="#">
+						Services
+					</a>
+					<a className="nav-item nav-link disabled" href="#">
+						Contact
+					</a>
+				</div>
+			</nav>
 		);
 	}
 }
