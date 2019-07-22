@@ -4,7 +4,7 @@ import React from "react";
 export class Nav extends React.Component {
 	render() {
 		return (
-			<nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+			<nav className="sticky-top navbar navbar-expand-lg navbar-dark bg-dark">
 				<a className="navbar-brand" href="#">
 					Start Bootstrap
 				</a>

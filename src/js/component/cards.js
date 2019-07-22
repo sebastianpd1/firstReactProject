@@ -7,7 +7,7 @@ export class Card extends React.Component {
 			{
 				title: "Title1",
 				desc: "desc2",
-				img: "http://lorempixel.com/400/400/sports/"
+				img: "http://lorempixel.com/400/400/transport/"
 			},
 			{
 				title: "Title1",
@@ -17,12 +17,12 @@ export class Card extends React.Component {
 			{
 				title: "Title1",
 				desc: "desc2",
-				img: "http://lorempixel.com/400/400/sports/"
+				img: "http://lorempixel.com/400/400/fashion/"
 			},
 			{
 				title: "Title1",
 				desc: "desc2",
-				img: "http://lorempixel.com/400/400/sports/"
+				img: "http://lorempixel.com/400/400/nightlife/"
 			}
 		];
 
