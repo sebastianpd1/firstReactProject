@@ -3,6 +3,7 @@ import { Nav } from "./Nav"; //Nav's file uses "export class Nav extends React.C
 import Jumbotron from "./Jumbotron"; //Jumbotron's file uses "export default class Jumbotron extends React.Component", so we don't need the "{ }"
 import { Card } from "./cards";
 import { Footer } from "./footer";
+import { ContactForm } from "./contact";
 //include images into your bundle
 import rigoImage from "../../img/rigo-baby.jpg";
 
@@ -15,6 +16,7 @@ export class Home extends React.Component {
 				<div className="container text-center mt-5">
 					<Jumbotron />
 					<Card />
+					<ContactForm />
 				</div>
 				<Footer />
 			</React.Fragment>
